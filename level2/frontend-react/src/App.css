@@ -1,0 +1,113 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #f4f6f8;
+  color: #1a1a1a;
+}
+
+.app-header {
+  background: #2563eb;
+  color: white;
+  padding: 24px 32px;
+}
+
+.app-header h1 { margin: 0 0 4px; }
+.app-header p { margin: 0; opacity: 0.9; }
+
+.user-bar {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.user-bar button {
+  background: white;
+  color: #2563eb;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+main {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+  display: grid;
+  gap: 24px;
+}
+
+.auth-card, .product-form {
+  background: white;
+  border-radius: 10px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.auth-card form, .product-form { display: grid; gap: 10px; }
+
+input, textarea {
+  font: inherit;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-weight: 600;
+  background: #2563eb;
+  color: white;
+}
+
+.secondary-btn { background: #6b7280; }
+.danger-btn { background: #dc2626; }
+.link-btn {
+  background: none;
+  color: #2563eb;
+  padding: 0;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.form-actions { display: flex; gap: 10px; }
+
+.product-section {
+  background: white;
+  border-radius: 10px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.product-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.product-card h3 { margin: 0 0 6px; }
+.product-card p { margin: 4px 0; font-size: 14px; color: #4b5563; }
+.owner-tag { font-style: italic; font-size: 12px; }
+
+.card-actions { display: flex; gap: 8px; margin-top: 10px; }
+.card-actions button { padding: 6px 10px; font-size: 13px; }
+
+.error-text { color: #dc2626; font-size: 14px; }
+.center-text { text-align: center; margin-top: 40px; }
